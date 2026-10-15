@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINETECH - Tienda Virtual de Tecnología</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <span class="logo">ONLINETECH</span>
+        </div>
+        <div class="menu-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#productos">Productos</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Sección INICIO (Hero Banner) -->
+    <header id="inicio" class="hero-banner">
+        <div class="hero-content">
+            <h1>Innovación y Tecnología a tu Alcance</h1>
+            <p>Microempresa especializada en reventa en línea de artículos tecnológicos de alta gama a través de Mercado Libre y envíos seguros con Servientrega.</p>
+            <a href="#productos" class="btn-primary">Ver Catálogo</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Sección NOSOTROS -->
+        <section id="nosotros" class="content-section">
+            <h2>Sobre Nosotros</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Misión</h3>
+                    <p>Comercializar y proveer artículos tecnológicos de alta demanda y calidad (smartphones, tablets, computadores portátiles y accesorios) a través de tiendas virtuales como Mercado Libre, ofreciendo a los clientes de Colombia precios accesibles, descripciones técnicas detalladas y envíos nacionales seguros mediante aliados estratégicos como Servientrega.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Visión</h3>
+                    <p>Consolidar este emprendimiento digital como una microempresa reconocida a nivel nacional en el comercio electrónico de tecnología, destacándose por la confianza, la verificación técnica de los equipos y la optimización constante de los procesos logísticos y de atención al cliente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección PRODUCTOS -->
+        <section id="productos" class="content-section">
+            <h2>Nuestras Líneas de Productos</h2>
+            <p class="section-subtitle">Explora las categorías tecnológicas disponibles en nuestra tienda virtual:</p>
+            
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80" alt="Smartphone Reacondicionado">
+                    <h3>Smartphone Reacondicionado</h3>
+                    <p>Equipos certificados con garantía, optimizados y listos para operar en cualquier operador nacional.</p>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=400&q=80" alt="Combo de Accesorios">
+                    <h3>Combo de Accesorios</h3>
+                    <p>Cargadores rápidos, protectores de pantalla, audífonos y soportes de alta durabilidad.</p>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=400&q=80" alt="Tablet Reacondicionada">
+                    <h3>Tablet Reacondicionada</h3>
+                    <p>Dispositivos ideales para estudio, productividad y entretenimiento digital con excelente rendimiento.</p>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80" alt="Computador Portátil Usado">
+                    <h3>Portátil Multitarea</h3>
+                    <p>Computadores portátiles probados rigurosamente para garantizar velocidad y eficiencia en el trabajo diario.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección CONTACTO Y FORMULARIO (Requisito Guía 2) -->
+        <section id="contacto" class="content-section">
+            <h2>Contacto y Soporte</h2>
+            <p class="section-subtitle">¿Tienes alguna duda sobre nuestros productos o envíos? Escríbenos directamente.</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Información de Ubicación</h3>
+                    <p><strong>Ciudad:</strong> Ibagué, Tolima, Colombia</p>
+                    <p><strong>Dirección base:</strong> Cr. 31ª # 25ª - 07</p>
+                    <p><strong>Teléfono / WhatsApp:</strong> +57 311 2473868</p>
+                    <p><strong>Canal de Ventas:</strong> Tienda Oficial en Mercado Libre</p>
+                </div>
+
+                <form class="contact-form" action="mailto:contacto@onlinetech.co" method="POST" enctype="text/plain">
+                    <h3>Envíanos un Mensaje</h3>
+                    
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono / WhatsApp</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="3001234567" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interes">Interés o Producto</label>
+                        <select id="interes" name="interes">
+                            <option value="smartphone">Smartphone Reacondicionado</option>
+                            <option value="tablet">Tablet</option>
+                            <option value="portatil">Computador Portátil</option>
+                            <option value="accesorios">Accesorios</option>
+                            <option value="otro">Otra consulta general</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu consulta aquí..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar Datos</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Desarrollado con dedicación por <strong>Jeronimo Prada Pezzotti</strong> | Proyecto de Gestión Empresarial - ONLINETECH © 2026</p>
+    </footer>
+
+</body>
+</html>
